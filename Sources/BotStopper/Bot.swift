@@ -9,15 +9,8 @@ import Foundation
 
 public struct Bot: Decodable {
     let pattern: String
-    let lastChanged: String
 
-    public init(pattern: String, lastChanged: String = "") {
+    public init(pattern: String) {
         self.pattern = pattern
-        self.lastChanged = lastChanged
-    }
-
-    enum CodingKeys: String, CodingKey {
-        case pattern
-        case lastChanged = "last_changed"
     }
 }

@@ -14,5 +14,5 @@ enum BotStopperError: Error {
 }
 
 extension HTTPResponseStatus {
-    static let botDetected: HTTPResponseStatus = .custom(code: 405, reasonPhrase: "Bots not allowed 🤖")
+    public static let botDetected: HTTPResponseStatus = .custom(code: 405, reasonPhrase: "Bots not allowed 🤖")
 }

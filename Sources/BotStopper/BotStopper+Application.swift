@@ -37,4 +37,11 @@ extension Application.BS {
         }
         try BotStopper.stop(using: config, userAgent: userAgent)
     }
+
+    public func isBot(userAgent: String) throws -> Bool {
+        guard let config = self.application.botStopper.configuration else {
+            throw BotStopperError.notConfigured
+        }
+        return BotStopper.isBot(using: config, userAgent: userAgent)
+    }
 }

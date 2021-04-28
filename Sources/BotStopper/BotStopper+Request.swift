@@ -24,6 +24,13 @@ extension Request.BS {
         }
         try self.request.application.botStopper.stop(userAgent: userAgent)
     }
+
+    public func isBot() throws -> Bool {
+        guard let userAgent = self.request.headers.userAgent else {
+            throw BotStopperError.noUserAgent
+        }
+        return try self.request.application.botStopper.isBot(userAgent: userAgent)
+    }
 }
 
 private extension HTTPHeaders {
