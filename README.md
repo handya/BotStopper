@@ -1,4 +1,4 @@
-# BotStopper
+# BotStopper 🤖✋
 [![SwiftLint](https://github.com/handya/BotStopper/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/handya/BotStopper/actions/workflows/swiftlint.yml) [![Tests](https://github.com/handya/BotStopper/actions/workflows/tests.yml/badge.svg)](https://github.com/handya/BotStopper/actions/workflows/tests.yml)
 
 Bot stopper is a simple proof of concept vapor package to detect bots using the user agent header and a list of bots from [COUNTER-Robots](https://github.com/atmire/COUNTER-Robots)
