@@ -31,7 +31,7 @@ extension Application {
 }
 
 extension Application.BS {
-    func stop(userAgent: String) throws {
+    public func stop(userAgent: String) throws {
         guard let config = self.application.botStopper.configuration else {
             throw BotStopperError.notConfigured
         }

@@ -17,4 +17,8 @@ public struct BotStopperConfiguration {
         }
         self.botList = try JSONDecoder().decode([Bot].self, from: jsonData)
     }
+
+    public init(bots: [Bot]) {
+        self.botList = bots
+    }
 }

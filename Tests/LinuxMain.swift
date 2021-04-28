@@ -1,5 +1,4 @@
 import XCTest
-
 import BotStopperTests
 
 var tests = [XCTestCaseEntry]()
