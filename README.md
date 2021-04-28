@@ -6,6 +6,15 @@ Bot stopper is a simple proof of concept vapor package to detect bots using the 
 
 ### Usage 
 Add the package to your project and get the latest bot list from [COUNTER-Robots](https://github.com/atmire/COUNTER-Robots)
+```swift
+[
+    {
+        "pattern": "bot",
+        "last_changed": "2017-08-08"
+    },
+    ...
+]
+```
 
 Setup: 
 ```swift
@@ -19,16 +28,4 @@ Use:
      	...
 ```
 
-if Bot Stopper detect a bot user agent it will throw a 405 error.
-
-
-```swift
-[
-  {
-    "pattern": "bot",
-    "last_changed": "2017-08-08"
-  },
-...
-]
-```
-
+If Bot Stopper detects a bot user agent it will throw a 405 error.
